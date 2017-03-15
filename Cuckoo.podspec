@@ -23,7 +23,6 @@ Pod::Spec.new do |s|
   s.preserve_paths              = ['Generator/**/*', 'run', 'build_generator']
   s.prepare_command             = <<-CMD
                                     git submodule update --init --recursive
-                                    ./build_generator
                                 CMD
   s.frameworks                  = 'XCTest', 'Foundation'
   s.requires_arc                = true
