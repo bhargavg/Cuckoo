@@ -21,9 +21,6 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target      = '9.0'
   s.source_files                = ['Source/**/*.swift']
   s.preserve_paths              = ['Generator/**/*', 'run', 'build_generator']
-  s.prepare_command             = <<-CMD
-                                    git submodule update --init --recursive
-                                CMD
   s.frameworks                  = 'XCTest', 'Foundation'
   s.requires_arc                = true
   s.pod_target_xcconfig         = { 'ENABLE_BITCODE' => 'NO', 'SWIFT_REFLECTION_METADATA_LEVEL' => 'none' }
